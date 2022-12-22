@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Money news</title>
+	<link rel="icon" href="images/images.jpg">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<header class="header">
+		<h2 class="header-logo"><a href="#">Money<br><span class="header-logo-mod">news</span></a></h2>
+		<input id="btn-menu" type="checkbox">
+		<label class="btn-menu-open" for="btn-menu">=</label>
+		<nav class="header-nav">
+			<ul>
+				<label class="btn-menu-close" for="btn-menu">X</label>
+				<li><a href="#">News</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<section class="main-text">
+			<h1 class="main-text-title">Money <span class="main-text-title-mod">news. <br>Escreva-se na newsletter.</span></h1>
+			<p class="main-text-description">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Vitae cupiditate velit, labore deleniti. Repellat itaque adipisci voluptates quas nam, corporis consequuntur ullam accusamus eius at, a nemo! Consequuntur, possimus aliquam.</p>
+			<form>
+				<input type="text" placeholder="Nome">
+				<input type="email" placeholder="E-mail">
+				<input type="submit" value="Enviar >">
+			</form>
+		</section>
+
+		<section class="main-image">
+			<img src="images/istockphoto-1160780204-1024x1024-removebg-preview.png" alt="">
+		</section>
+	</main>
+
+	<footer id="footer"></footer>
+
+	<script>
+		var footer = document.getElementById("footer")
+		setTimeout(()=>{
+			footer.innerHTML = '<p>Coded by <a href="https://github.com/jose-valdeval">José V.</a></p>'
+		}, 10000)
+	</script>
+</body>
+</html>
