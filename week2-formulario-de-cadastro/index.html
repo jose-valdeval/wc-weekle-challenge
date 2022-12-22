@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario de Cadastro</title>
+	<link rel="icon" href="./images/images.jpg">
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/base.css">
+</head>
+<body>
+	<header class="header">
+		<h2 class="header-logo"><a href="#">Money<br><span class="header-logo-mod">news</span></a></h2>
+		<input id="btn-menu" type="checkbox">
+		<label class="btn-menu-open" for="btn-menu">=</label>
+		<nav class="header-nav">
+			<ul>
+				<label class="btn-menu-close" for="btn-menu">X</label>
+				<li><a href="#">News</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<form class="main-form">
+
+			<fieldset>
+				<legend>Informações Pessoais</legend>
+				<label>
+					<p>*Nome:</p>
+					<input type="text" required>
+				</label>
+				<label>
+					<p>*Sobrenome:</p>
+					<input type="text" required>
+				</label>
+				<label>
+					<p>*Idade:</p>
+					<input type="date" required>
+				</label>
+				<label class="radio" required>
+					<p>Sexo:</p>
+					<label>
+						<input type="radio" name="gender">
+						Masculino
+					</label>
+					<label>
+						<input type="radio" name="gender">
+						Feminino
+					</label>
+					<label>
+						<input type="radio" name="gender">
+						Outro
+					</label>
+				</label>
+				<label>
+					<p>Descrição:</p>
+					<textarea rows="7"></textarea>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Endereço</legend>
+				<label>
+					<p>*Pais:</p>
+					<input type="text" required>
+				</label>
+				<label>
+					<p>*Estado:</p>
+					<input type="text" required>
+				</label>
+				<label>
+					<p>*Cidade:</p>
+					<input type="text" required>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Informações de Login</legend>
+				<label>
+					<p>*Nome de usuario:</p>
+					<input type="text" required>
+				</label>
+				<label>
+					<p>*E-mail:</p>
+					<input type="email" required>
+				</label>
+				<label>
+					<p>*Senha:</p>
+					<input type="password" required>
+				</label>
+			</fieldset>
+			<input type="submit" value="Enviar>">
+		</form>
+	</main>
+
+	<footer id="footer"></footer>
+
+	<script>
+		var footer = document.getElementById("footer")
+		setTimeout(()=>{
+			footer.innerHTML = '<p>Coded by <a href="https://github.com/jose-valdeval">José V.</a></p>'
+		}, 10000)
+	</script>
+</body>
+</html>

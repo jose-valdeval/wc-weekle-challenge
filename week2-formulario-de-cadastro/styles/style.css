@@ -1,0 +1,188 @@
+body{
+	margin: 20px auto;
+	padding: 0 20px;
+	max-width: 1200px;
+	background-color: #E8F3F9;
+}
+
+/*						header						*/
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	font-weight: 500;
+}
+.header-logo{
+	color: #FFBD28;
+	font-size: 40px;
+	line-height: 35px;
+}
+.header-logo-mod{
+	margin-left: 62px;
+	color: #000;
+	font-weight: 400;
+}
+#btn-menu{
+	display: none;
+}
+.btn-menu-open{
+	display: none;
+	font-size: 50px;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+.btn-menu-close{
+	display: none;
+	font-size: 30px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+.header-nav ul{
+	display: flex;
+}
+.header-nav li{
+	padding: 30px 0;
+}
+.header-nav a{
+	padding: 30px;
+	transition: 0.6s;
+}
+.header-nav a:hover{
+	color: #FFBD28;
+}
+
+/*						main						*/
+main{
+	width: 100%;
+}
+form{
+	margin: 0 auto;
+	padding: 40px 0;
+	width: 60%;
+}
+fieldset{
+	padding: 20px 30px;
+	margin-bottom: 15px;
+	background-color: #FFCD1E;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+legend{
+	font-size: 22px;
+}
+p{
+	margin-top: 15px;
+}
+textarea{
+	width: 90%;
+	resize: none;
+}
+.radio{
+	display: flex;
+	flex-direction: column;
+}
+.radio label{
+	margin-left: 10%;
+}
+.radio label, .radio p{
+	width: 100%;
+}
+input, textarea{
+	padding: 5px 15px;
+	background-color: #FEE19E;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+legend, p{
+	margin-left: 30px;
+}
+form label, p, input{
+	width: 100%;
+}
+input:valid{
+	border-color: #3CCD3C;
+}
+input:focus{
+	border-color: #3396FF;
+}
+input[type="radio"]{
+	width: 20px;
+}
+input[type="submit"]{
+	margin: 0 30px 0 auto;
+	width: 50%;
+	display: block;
+	background-color: #FECB54;
+	border-color: black;
+}
+
+/*						footer						*/
+
+footer {
+	margin-right: 10%;
+	text-align: right;
+}
+footer p a{
+	transition: 0.6s;
+}
+footer p:hoder > a{
+	color: #FFBD28;
+}
+
+/*						media						*/
+
+@media (max-width: 768px){
+
+/*						media header						*/
+
+	.header{
+		flex-direction: column;
+		text-align: center;
+	}
+	.header-logo{
+		font-size: 30px;
+		line-height: 28px;
+	}
+	.header-logo-mod{
+		margin-left: 67px;
+	}
+	.header-nav{
+		display: none;
+		position: fixed;
+		width: 70%;
+		padding-top: 70px;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		text-align: left;
+		background-color: #E8F3F9;
+		box-shadow: 0 0 20px #aaa;
+	}
+	.btn-menu-open, .btn-menu-close{
+		display: block;
+	}
+	.header-nav ul{
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.header-nav li{
+		padding: 0;
+	}
+	.header-nav a{
+		display: block;
+		padding: 15px 90% 15px 10%;
+	}
+	#btn-menu:checked ~ .header-nav{
+		display: block;
+	}
+
+/*						media main						*/
+
+	form{
+		margin: 0 auto;
+		width: 100%;
+	}
+}
