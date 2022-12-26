@@ -86,6 +86,9 @@ body{
 .main-container-list-items > section:hover{
 	background-color: #d4ff00;
 }
+.main-container-list-items a{
+	cursor: pointer;
+}
 
 .footer{
 	padding: 30px;
